@@ -30,6 +30,7 @@
 
   <body id="page-top">
 
+<!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-none d-lg-block">
@@ -69,8 +70,8 @@
       </div>
     </nav>
 
+<!-- about section -->
     <div class="container-fluid p-0">
-
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
           <h1 class="mb-0">Mahdi
@@ -109,10 +110,10 @@
         </div>
       </section>
 
+<!-- Skills section -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
           <h2 class="mb-5">Skills</h2>
-
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
@@ -180,6 +181,7 @@
       </div>
       </section>
 
+<!-- portfolio section -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio">
         <div class="my-auto">
           <h2 class="mb-5">Portfolio</h2>
@@ -199,6 +201,7 @@
         </div>
       </section>
 
+<!-- education section -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
@@ -227,6 +230,7 @@
         </div>
       </section>
 
+<!-- work section -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="work">
         <div class="my-auto">
           <h2 class="mb-5">Work Experience</h2>
@@ -266,6 +270,7 @@
         </div>
       </section>
 
+<!-- volunteer section -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="volunteer">
         <div class="my-auto">
           <h2 class="mb-5">Volunteer Experience</h2>
@@ -289,6 +294,7 @@
         </div>
       </section>
 
+<!-- interests section -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
@@ -300,80 +306,38 @@
       <!-- Test contact form -->
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="contact">
         <div class="my-auto">
-          <div class="contact">
           <h2 class="mb-5">Contact Me</h2>
-            <form>
-              <p><input type="text" name="name" placeholder="Name"></p>
-              <p><input type="email" name="email" placeholder="Email Address"></p>
-              <p><input type="text" name="phone" placeholder="Phone # (Optional)"></p>
-              <input type="text" name="Subject" placeholder="Subject"></p>
-              <p><textarea name="message" rows="3" placeholder="Type message here..."></textarea></p>
-              <p><button>Send</button></p>
+            <form id="contactForm">
+              <p><input type="text" name="name" placeholder="Name" id="contactName" required></p>
+              <p><input type="email" name="email" placeholder="Email Address" id="contactEmail" required></p>
+              <p><input type="text" name="phone" placeholder="Phone # (Optional)" id="contactPhone"></p>
+              <input type="text" name="Subject" placeholder="Subject" id="contactSubject" required></p>
+              <p><textarea name="message" rows="3" placeholder="Type message here..." id="contactMessage" required></textarea></p>
+              <!-- <div class="form-group">
+                  <div class="g-recaptcha" data-sitekey="6LcRy1AUAAAAAG4Hng2XCwW5BF_VPVoaOK8Qsje-"></div>
+                  <span class="help-block" style="display: none;" require>Please check that you are not a robot.</span>
+                </div> -->
+              <p><button type"submit">Send</button></p>
             </form>
-          </div>
+            <div class="alert">Your message has been sent!</div>
         </div>
       </section>
-
-
-
-      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
-        <div class="my-auto">
-          <div id="contact_form" class="row">
-              <div class="col-md-12">
-                <h2 class="mb-5">Contact</h2>
-                <form role="form" id="feedbackForm"  data-toggle="validator" data-disable="false">
-                  <div class="form-group">
-                    <label class="control-label" for="name">Name *</label>
-                    <div class="input-group">
-                      <input type="text" class="form-control" id="contactName" name="name" placeholder="Enter your name" required/>
-                      <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
-                    </div>
-                    <span class="help-block" style="display: none;">Please enter your name.</span>
-                  </div>
-                  <div class="form-group">
-                    <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
-                  </div>
-                  <div class="form-group">
-                      <label class="control-label" for="email">Reason for Contact *</label>
-                      <select name="reason" id="contactReason" id="reason" class="form-control" required>
-                        <option value="General Inquiry">General Inquiry</option>
-                        <option value="Place Order">Place Order</option>
-                        <option value="Report Issue">Report Issue</option>
-                      </select>
-                      <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
-                    </div>
-                  <div class="form-group">
-                    <label class="control-label" for="email">Email Address *</label>
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="contactEmail" id="email" name="email" placeholder="Enter your email" required/>
-                      <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
-                    </div>
-                    <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label" for="message">Message *</label>
-                    <div class="input-group">
-                      <textarea rows="5" cols="30" class="form-control" id="contactMessage" id="message" name="message" placeholder="Enter your message" required></textarea>
-                      <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
-                    </div>
-                    <span class="help-block" style="display: none;">Please enter a message.</span>
-                  </div>
-                  <div class="form-group">
-                    <div class="g-recaptcha" data-sitekey="6LcRy1AUAAAAAG4Hng2XCwW5BF_VPVoaOK8Qsje-"></div>
-                    <span class="help-block" style="display: none;">Please check that you are not a robot.</span>
-                  </div>
-                  <span class="help-block" style="display: none;">Please enter a the security code.</span>
-                  <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" data-loading-text="Sending..." style="display: block; margin-top: 10px;">Send Feedback</button>
-                </form>
-              </div> 
-        </div> 
-        <hr> -->
         <div>&copy; Copyright 2018 | Mahdi Hamdan</div>
       </section>
 
     </div>
 
 
+
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    
     <!-- Contact Form -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="assets/vender/intl-tel-input/js/intlTelInput.min.js"></script>
@@ -394,11 +358,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
 
-    <script>
-      $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip();   
-      });
-      </script> 
+
   </body>
 
 </html>
